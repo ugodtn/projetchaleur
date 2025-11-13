@@ -4,19 +4,95 @@
         <meta charset="UTF-8" />
         <title>Projet chaleur</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="description" content="Le projet chaleur." />
+        <meta name="description" content="Création organo-climatiques pour le confort thermique." />
+        <link rel='stylesheet' href='https://www.cnap.fr/sites/faune/styles/faune-fontes.css'>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="icon" href="favicon.png">
     </head>
     <body>
         <header>
-            <p>Projet Chaleur</p>
+            <h1>Projet Chaleur</h1>
+            <p><strong>Des créations pour la maison qui font du bien au corps et à l'environnement</strong></p>
         </header>
+
         <main>
-            <h1>Bonjour, le monde !</h1>
+          <section class="accroche">
+            <p class="texte"></p>
+          </section>
+
+          <section class="exposition">
+            <div class="presentation">
+              <img src="images/exposition.jpeg" alt="" />
+              <div class="content">
+                <div>
+                  <h2>&nbsp;EXPOSITISION&nbsp;<br>&nbsp;Chaleur Pas Chaleur&nbsp;</h2>
+                </div>
+                <div>
+                  <p><strong>&nbsp;Du 14 février au 3 mars 2025&nbsp;<br></strong></p>
+                  <p><strong>&nbsp;Salle Malgouverne - Cluny - Saône-et-Loire&nbsp;</strong></p>
+                </div>
+                <div>
+                  <p>Venez voir et tester des aménagements organo-climatiques pour se réchauffer en hiver et se rafraichir en été de façon élégante et économique, lors d'un exposition sensible et sensorielle.</p>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="ateliers">
+                <div class="image"></div>
+                <div class="content">
+                  <div>
+                    <h2>Ateliers</h2>
+                  </div>
+                  <div>
+                    <p>Comment avoir chaud chez soi, mais pas trop, sans trop consommer ?</p>
+                  </div>
+                </div>
+              </div>
+              <div class="colloque">
+                <div class="image"></div>
+                <div class="content">
+                  <div>
+                    <h2>Colloque</h2>
+                  </div>
+                  <div>
+                    <p>Le confort thermique à l'heure de l'antropcène : principes théoriques et actions à l'usage de toutes et tous.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="information">
+            <h2>Informations et inscriptions</h2>
+
+            <form
+              class="form"
+              name="contact"
+              method="post"
+              action="/merci/"
+              data-netlify="true"
+              netlify-honeypot="name">
+
+              <div class="form__element name">
+                <label for="name">Votre nom</label>
+                <input type="text" name="name">
+              </div>
+
+              <div class="form__element email">
+                <label for="email">Votre adresse e-mail</label>
+                <input type="email" name="email" required>
+              </div>
+
+              <div class="form__element">
+                <button class="button" type="submit">Recevoir les informations</button>
+              </div>
+            </form>
+          </section>
         </main>
+
         <footer>
-            <small>© 2025 Flux initiative sous licence CC BY-NC-ND</small>
+            <small>Typographie : <em>Faune</em>, Alice Savoie / Cnap</small><br>
+            <small>Textes, illustrations et modèles déposés : Lucile Sauzet © 2025 sous licence CC BY-NC-ND</small><br>
         </footer>
     </body>
 </html>

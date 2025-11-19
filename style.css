@@ -124,13 +124,13 @@ body {
 
         .ateliers {
           .image {
-            background-image: url(images/chaud.jpeg);
+            background-image: url(images/atelier.jpeg);
           }
         }
 
         .colloque {
           .image {
-            background-image: url(images/froid.jpeg);
+            background-image: url(images/colloque.jpeg);
           }
         }
 

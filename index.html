@@ -31,14 +31,17 @@
               <img src="images/exposition.jpeg" alt="" />
               <div class="content">
                 <div>
-                  <h2>&nbsp;EXPOSITION&nbsp;<br>&nbsp;Avoir chaud mais pas trop&nbsp;</h2>
+                  <h2>&nbsp;EXPOSITION&nbsp;<br>&nbsp;Avoir chaud mais pas trop&nbsp;<br><span>&nbsp;Chez soi et en toute saison&nbsp;</span></h2>
                 </div>
                 <div>
-                  <p><strong>&nbsp;Du 13 au 26 février 2026&nbsp;<br></strong></p>
-                  <p><strong>&nbsp;Salle Victor Duruy - Cluny - Saône-et-Loire&nbsp;</strong></p>
+                  <p><strong>&nbsp;Du 13 au 26 février 2026 à Cluny&nbsp;<br></strong></p>
+                  <p>&nbsp;Salle Victor Duruy - 4 place du marché&nbsp;<br></p>
                 </div>
                 <div>
-                  <p>Venez voir et tester des aménagements <em>organo-climatiques</em> pour se réchauffer en hiver et se rafraîchir en été de façon élégante et économique, lors d'une exposition sensible et inspirante.</p>
+                  <p>Venez voir et tester des aménagements <em>organo-climatiques</em> pour se réchauffer en hiver et se rafraîchir en été de façon élégante et économique, lors d'une exposition sensible et inspirante.<br><br></p>
+                  <p>Lundi au samedi : 10h à 18h<br></p>
+                  <p>Dimanche : 14h à 17h<br></p>
+                  <p><em>Entrée libre</em></p>
                 </div>
               </div>
             </div>
@@ -47,10 +50,14 @@
                 <div class="image"></div>
                 <div class="content">
                   <div>
-                    <h2>&nbsp;Ateliers&nbsp;</h2>
+                    <h2>&nbsp;Ateliers&nbsp;<br></h2>
+                    <p><strong>Du 14 au 26 février à Cluny</strong></p>
                   </div>
                   <div>
                     <p>Comment avoir chaud chez soi, mais pas trop, sans trop consommer ?</p>
+                  </div>
+                  <div>
+                    <a href="/ateliers.html">Découvrir et participer aux ateliers</a>
                   </div>
                 </div>
               </div>
@@ -74,7 +81,7 @@
 
             <form
               class="form"
-              name="contact"
+              name="information"
               method="post"
               action="/merci/"
               data-netlify="true"
@@ -153,6 +160,47 @@
               </li>
             </ul>
           </section>
+
+          <section class="linkedin">
+            <h2>Suivez-nous sur Linkedin</h2>
+            <div class="posts">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7408889721990434816?collapsed=1" height="565" width="420" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7414976439483310080?collapsed=1" height="565" width="420" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>            </div>
+          </section>
+
+          <section class="contact">
+            <h2>Contactez-nous</h2>
+            <p>Vous pouvez également nous écrire à contact[at]projetchaleur.com</p>
+
+            <form
+              class="form"
+              name="contact"
+              method="post"
+              action="/merci/"
+              data-netlify="true"
+              netlify-honeypot="name">
+
+              <div class="form__element name">
+                <label for="name">Votre nom</label>
+                <input type="text" name="name">
+              </div>
+
+              <div class="form__element email">
+                <label for="email">Votre adresse e-mail</label>
+                <input type="email" name="email" required>
+              </div>
+
+              <div class="form__element message">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <div class="form__element">
+                <button class="button" type="submit">Envoyer le message</button>
+              </div>
+            </form>
+          </section>
+
         </main>
 
         <footer>

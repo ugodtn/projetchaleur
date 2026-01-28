@@ -88,12 +88,13 @@ body {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%238f9dc6'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
         padding: 2rem;
         gap: 2rem;
 
         img {
           flex: 1 1 200px;
-          object-fit: cover;
+          object-fit: contain;
           max-width: 100%;
         }
 
@@ -133,8 +134,24 @@ body {
         gap: 2rem;
 
         .ateliers {
+
           .image {
             background-image: url(images/atelier.jpeg);
+          }
+
+          a {
+            font-size: 1.125rem;
+            font-family: 'Faune', sans-serif;
+            font-weight: bold;
+            color: var(--rouge-bordeau);
+            background-color: var(--peau-de-blanc);
+            border: solid 2px var(--rouge-bordeau);
+            padding: 0.5rem 2rem;
+            text-decoration: none;
+
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
 
@@ -150,15 +167,24 @@ body {
           padding: 2rem;
           display: flex;
           gap: 2rem;
+          font-size: 1.25rem;
 
           h2 {
             display: inline;
             background-color: var(--peau-de-blanc);
           }
 
+          div {
+            margin-bottom: 1rem;
+          }
+
           p {
             display: inline;
             background-color: var(--bleu-gris);
+          }
+
+          .subtitle {
+            background-color: var(--peau-de-blanc);
           }
 
           .content {
@@ -266,7 +292,7 @@ body {
       }
     }
 
-    .equipe, .soutiens, .histoire, .linkedin, .ateliers {
+    .equipe, .soutiens, .histoire, .linkedin {
       margin-top: 2rem;
       padding: 2rem;
       text-align: center;

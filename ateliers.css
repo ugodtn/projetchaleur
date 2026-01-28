@@ -5,18 +5,31 @@ header a {
   margin-bottom: 2rem;
 }
 
+.exposition a {
+  color: black;
+  text-decoration: none;
+  /* border-bottom: 4px dashed black; */
+}
+
 .ateliers {
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--peau-de-blanc);
-  font-size: 1.125rem;
 
-  h2 {
-    margin-bottom: 1rem !important;
-  }
+  .atelier {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--peau-de-blanc);
+    font-size: 1.125rem;
+    text-align: center;
+    padding: 2rem;
+    max-width: 640px;
 
-  .subtitle {
-    font-size: 1.25rem;
+    h2 {
+      margin-top: 0;
+      margin-bottom: 1rem !important;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+    }
   }
 }

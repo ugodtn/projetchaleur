@@ -3,6 +3,10 @@
   margin-top: 1rem;
 }
 
+.exposition .description {
+  font-size: 1.25rem !important;
+}
+
 .presentation {
   padding: 2rem;
   font-size: 1.25rem;

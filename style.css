@@ -82,14 +82,15 @@ body {
       flex-wrap: wrap;
       font-weight: bold;
       text-align: left;
+      text-decoration: none;
       font-size: 1.25rem;
       color: white;
       margin-bottom: 2rem;
       background-color: var(--rose-fuschia);
       padding: 0.5rem 1rem 0.75rem 1rem ;
 
-      a {
-        color: white !important;
+      p {
+        margin: 0;
       }
     }
 

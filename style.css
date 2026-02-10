@@ -71,6 +71,10 @@ h3 {
   font-size: 1.75rem;
 }
 
+li {
+  margin-bottom: 1rem;
+}
+
 .light-button {
   font-size: 1.125rem;
   font-family: 'Faune', sans-serif;

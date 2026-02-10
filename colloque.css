@@ -22,7 +22,7 @@
 
       img {
         flex: 1 1 100px;
-        max-width: 320px;
+        max-width: min(320px, 100%);
       }
 
       .biographie {

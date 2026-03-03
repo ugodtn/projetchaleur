@@ -18,7 +18,7 @@
     gap: 2rem;
 
     .video {
-      flex: 1 1 400px;
+      flex: 1 1 368px;
 
       iframe, object, embed {
         width: 100%;

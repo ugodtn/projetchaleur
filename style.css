@@ -75,6 +75,21 @@ li {
   margin-bottom: 1rem;
 }
 
+.button {
+  font-size: 1.125rem;
+  font-family: 'Faune', sans-serif;
+  font-weight: bold;
+  color: var(--peau-de-blanc);
+  background-color: var(--rouge-bordeau);
+  border: solid 2px var(--peau-de-blanc);
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .light-button {
   font-size: 1.125rem;
   font-family: 'Faune', sans-serif;

@@ -4,6 +4,7 @@
 
   --bleu-marine : #161846;
   --bleu-gris : #8f9dc6;
+  --bleu-glacon : #d3d8e8;
   --gris : #b6bbc7;
   --vert-clair : #9faaa6;
   --vert-foret : #03524e;
@@ -58,9 +59,9 @@
 
 h1 {
   font-weight: 900;
-  font-size: 3rem;
-  margin: 0;
-  padding: 0.75rem 0 0.25rem 0;
+  font-size: 3.5rem;
+  margin: 2rem 0 0 0;
+  padding: 0;
 }
 
 h2 {
@@ -71,15 +72,20 @@ h3 {
   font-size: 1.75rem;
 }
 
-li {
-  margin-bottom: 1rem;
+a {
+  color: var(--bleu-marine);
 }
 
-.button {
+li {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.bouton {
   font-size: 1.125rem;
   font-family: 'Faune', sans-serif;
   font-weight: bold;
-  color: var(--peau-de-blanc);
+  color: white;
   background-color: var(--rouge-bordeau);
   border: solid 2px var(--peau-de-blanc);
   padding: 0.5rem 2rem;
@@ -90,18 +96,23 @@ li {
   }
 }
 
-.light-button {
-  font-size: 1.125rem;
-  font-family: 'Faune', sans-serif;
-  font-weight: bold;
-  color: var(--rouge-bordeau);
-  background-color: var(--peau-de-blanc);
-  border: solid 2px var(--rouge-bordeau);
-  padding: 0.5rem 2rem;
-  text-decoration: none;
+.froid {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='0.5'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%2d3d8e8' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%238f9dc6'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
 
-  &:hover {
-    cursor: pointer;
+  .bouton {
+    color: var(--rouge-bordeau);
+    background-color: var(--bleu-glacon);
+    border: solid 2px var(--rouge-bordeau);
+  }
+}
+
+.chaud {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='0.9'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23e3b0ae'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
+
+  .bouton {
+    color: var(--rouge-bordeau);
+    background-color: var(--peau-de-blanc);
+    border: solid 2px var(--rouge-bordeau);
   }
 }
 
@@ -111,49 +122,47 @@ body {
   font-family: 'Faune', sans-serif;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23ffffff'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
 
+  .annonce {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color:  var(--rouge-bordeau);
+    margin-bottom: 2rem;
+    background-color: var(--peau-de-blanc);
+    padding: 0.5rem 1rem 0.75rem 1rem ;
+    overflow: hidden;
 
+    p {
+      margin: 0;
+      margin-bottom: -0.25rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .texte {
+      margin: 0;
+      display: inline-block;
+      padding-left: 20%;
+      white-space: nowrap;
+      animation: defilement 20s infinite linear;
+    }
+  }
 
   header {
     max-width: var(--max-width);
-    margin: 3rem auto 2rem auto;
+    margin: 4rem auto 2rem auto;
     padding: 0 1rem;
     color: var(--rouge-bordeau);
 
     p {
+      margin: 0.5rem 0 4rem 0;
       font-size: 1.5rem;
-      margin: 0;
-      padding: 0 0 1.25rem 0;
-    }
-
-    a {
-      font-size: 1.25rem;
-      font-weight: bolder;
-      display: block;
-      margin-bottom: 2rem;
     }
   }
 
   main {
     max-width: var(--max-width);
     margin: 1rem auto;
-
-    .annonce {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      font-weight: bold;
-      text-align: left;
-      text-decoration: none;
-      font-size: 1.25rem;
-      color: white;
-      margin-bottom: 2rem;
-      background-color: var(--rose-fuschia);
-      padding: 0.5rem 1rem 0.75rem 1rem ;
-
-      p {
-        margin: 0;
-      }
-    }
+    padding: 0 1rem;
 
     .accroche {
       min-height: 8em;
@@ -182,126 +191,126 @@ body {
       }
     }
 
-    .exposition {
+    .bloc-primaire {
       margin-top: 2rem;
+      min-height: 8em;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 700 700" width="700" height="700" opacity="1"><defs><filter id="nnnoise-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB"><feTurbulence type="fractalNoise" baseFrequency="0.079" numOctaves="4" seed="15" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence><feSpecularLighting surfaceScale="10" specularConstant="0.4" specularExponent="20" lighting-color="%238f9dc6" x="0%" y="0%" width="100%" height="100%" in="turbulence" result="specularLighting"><feDistantLight azimuth="3" elevation="82"></feDistantLight></feSpecularLighting></filter></defs><rect width="700" height="700" fill="%23570c39"></rect><rect width="700" height="700" fill="%238f9dc6" filter="url(%23nnnoise-filter)"></rect></svg>');
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 2rem;
+      gap: 2rem;
+      position: relative;
 
-      .presentation {
-        min-height: 8em;
-        /* text-align: center; */
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%238f9dc6'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        padding: 2rem;
-        gap: 2rem;
-
-        img {
-          flex: 1 1 200px;
-          object-fit: contain;
-          max-width: 368px;
-          width: 100%;
-        }
-
-        .content {
-          flex: 1 1 400px;
-
-          h2 {
-            display: inline;
-            background-color: var(--peau-de-blanc);
-          }
-
-          div {
-            display: block;
-            margin-bottom: 1rem;
-          }
-
-          p {
-            display: inline-block;
-            margin: 0;
-            font-size: 1.5rem;
-            background-color: var(--peau-de-blanc);
-          }
-
-          div:last-child {
-            margin-bottom: 0;
-
-            p {
-              background-color: var(--bleu-gris);
-            }
-
-            p:first-child {
-              margin-bottom: 1rem;
-            }
-          }
-        }
+      img {
+        flex: 1 1 400px;
+        object-fit: contain;
+        max-width: 400px;
+        width: 100%;
       }
 
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        min-height: 8rem;
-        margin-top: 2rem;
-        justify-content: space-between;
-        gap: 2rem;
+      .content {
+        flex: 1 1 320px;
 
-        .ateliers {
+        div {
+          display: block;
+          margin-bottom: 2rem;
 
-          .image {
-            background-image: url(images/atelier.jpeg);
-          }
-        }
-
-        .colloque {
-          .image {
-            background-image: url(images/colloque.jpeg);
-          }
-        }
-
-        .ateliers, .colloque {
-          flex: 1 1 300px;
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%238f9dc6'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
-          padding: 2rem;
-          display: flex;
-          gap: 2rem;
-          font-size: 1.25rem;
-
-          h2 {
-            display: inline;
-            background-color: var(--peau-de-blanc);
-          }
-
-          div {
+          &:first-child {
             margin-bottom: 1rem;
           }
 
-          p {
-            display: inline;
-            background-color: var(--bleu-gris);
+          &:last-child {
+            margin-bottom: 0;
           }
+        }
 
-          .subtitle {
-            background-color: var(--peau-de-blanc);
-          }
+        h2 {
+          display: inline;
+          color: white;
+        }
 
-          .content {
-            margin: auto 0;
+        p {
+          color: white;
+          font-size: 1.25rem;
+        }
 
-            div:last-child {
-              padding-top: 1rem;
-            }
-          }
-
-          .image {
-            flex: 0 0 20%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 108%;
-            background-color: var(--bleu-gris);
-            background-blend-mode: multiply;
-          }
+        a::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+          cursor: pointer;
         }
       }
     }
+
+    .bloc-secondaire {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 8rem;
+      margin-top: 2rem;
+      justify-content: space-between;
+      gap: 2rem;
+
+      > div {
+        flex: 1 1 300px;
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+        font-size: 1.25rem;
+        position: relative;
+
+        h2 {
+          font-size: 1.5rem;
+          display: inline;
+
+          em {
+            font-size: 2rem;
+          }
+        }
+
+        p {
+          display: inline;
+        }
+
+        div {
+          margin: 0 1rem 0.5rem 1rem;
+          text-align: center;
+          width: 100%;
+        }
+
+        .contenu {
+          margin: auto 0;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          div:last-child {
+            padding-top: 1rem;
+          }
+        }
+
+        a::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+          cursor: pointer;
+        }
+
+        .image {
+          flex: 0 0 20%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 108%;
+          background-color: var(--bleu-gris);
+          background-blend-mode: multiply;
+        }
+      }
+    }
+
 
     .information, .contact {
       margin-top: 2rem;
@@ -371,30 +380,65 @@ body {
             text-align: left;
           }
         }
-
-        button {
-          font-size: 1.125rem;
-          font-family: 'Faune', sans-serif;
-          font-weight: bold;
-          color: var(--peau-de-blanc);
-          background-color: var(--rouge-bordeau);
-          border: solid 2px var(--peau-de-blanc);
-          padding: 0.5rem 2rem;
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
       }
     }
 
-    .equipe, .soutiens, .histoire, .linkedin {
+    .equipe, .soutiens, .histoire, .actu {
       margin-top: 2rem;
       padding: 2rem;
       text-align: center;
 
       h2 {
         margin: 0 0 2rem 0;
+      }
+    }
+
+    .equipe {
+      text-align: left;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23ffffff'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        gap: 2rem;
+
+        > div {
+          max-width: 600px;
+
+          p {
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
+          }
+
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .actu {
+      margin-top: 4rem;
+      padding: 0;
+      text-align: left;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      a::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        cursor: pointer;
       }
 
       ul {
@@ -407,6 +451,19 @@ body {
 
         li {
           flex: 1 1 160px;
+          padding: 2rem;
+          background-color: white;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23ffffff'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
+
+          .categorie {
+            display: inline-block;
+            margin: 1rem 0 0 0;
+            font-size: 0.875rem;
+            font-weight: bold;
+            color: var(--rouge-bordeau);
+            background-color: var(--peau-de-blanc);
+            padding: 0.25rem 0.5rem;
+          }
 
           .image {
             margin: 0 auto;
@@ -428,14 +485,6 @@ body {
       }
     }
 
-    .equipe {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23ffffff'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
-
-      img {
-        max-width: 80%;
-      }
-    }
-
     .histoire {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%238f9dc6'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
 
@@ -451,18 +500,45 @@ body {
         max-width: var(--text-max-width);
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0;
       }
     }
 
     .soutiens {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23ffffff'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
-    }
 
-    .linkedin {
-      .posts {
+      h3 {
+        font-size: 1rem;
+      }
+
+      ul {
         display: flex;
-        justify-content: space-evenly;
         flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+
+        li {
+          flex: 0 0 200px;
+
+          .image {
+            margin: 0 auto;
+            width: 100%;
+            height: 8rem;
+            background-color: white;
+            position: relative;
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              max-width: 80%;
+              max-height: 80%;
+            }
+          }
+        }
       }
     }
   }
@@ -470,6 +546,21 @@ body {
   footer {
     padding: 1rem 0.5rem;
     text-align: center;
+  }
+}
+
+@keyframes defilement {
+  0% {
+    transform: translate3d(0,0,0);      /* position initiale à droite */
+  }
+  50% {
+    transform: translate3d(-50%,0,0);  /* position finale à gauche */
+  }
+  51% {
+    transform: translate3d(50%,0,0);  /* position finale à gauche */
+  }
+  100% {
+    transform: translate3d(0,0,0);  /* position finale à gauche */
   }
 }
 

@@ -1,0 +1,77 @@
+.logo img {
+  width: 160px !important;
+  height: 64px !important;
+}
+
+main {
+  max-width: 880px !important;
+  margin: 0 auto;
+}
+
+.bloc-titre {
+
+  a {
+    font-size: 1.25rem;
+  }
+
+  .date {
+    margin-top: 1rem;
+    font-size: 1.24rem;
+  }
+
+  .cover {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .sous-titre {
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+.bloc-contenu {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  .contenu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+    img {
+      flex: 1 1 200px;
+      object-fit: contain;
+      max-width: 192px;
+      align-self: flex-start;
+    }
+
+    .textes {
+      flex: 1 1 400px;
+
+      h2 {
+        display: inline;
+      }
+
+      .subtitle {
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

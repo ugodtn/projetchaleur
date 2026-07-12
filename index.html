@@ -12,162 +12,111 @@
         <meta property="og:site_name" content="Projet chaleur" />
         <meta property="og:type" content="website" />
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="icon" href="https://projetchaleur.com/images/favicon.png">
+        <link rel="icon" href="https://projetchaleur.com/images/favicon.jpg">
     </head>
     <body>
+
         <header>
-            <h1>PROJET <em>CHALEUR</em></h1>
-            <p><strong>Des créations pour la maison qui font du bien au corps et à l'environnement</strong></p>
+          <a href="/"><img src="/images/logo.svg" alt="Accueil - Projet Chaleur" width="240" height="78"></a>
+          <!-- <h1><strong>Des créations qui font du bien au corps et à l'environnement</strong></h1> -->
         </header>
 
         <main>
-          <section>
-            <a class="annonce" href="/colloque.html">
-                <p>➪&nbsp;COLLOQUE&nbsp;: le replay est disponible&nbsp;!</p>
-                <p>➪&nbsp;Voir l'enregistrement</p>
-            </a>
-          </section>
+          <!-- <section class="annonce">
+            <div class="texte"><h1>☼ Tempérons-nous sans tout cramer ! ☼</h1></div>
+          </section> -->
 
-          <section class="accroche">
+          <!-- <section class="accroche">
             <p class="texte"></p>
+          </section> -->
+
+          <section class="bloc-primaire">
+            <img src="/images/chaud.jpeg" alt="" />
+            <div class="content">
+              <div>
+                <h2>Chaud ? </br>Les <em>TUTOS</em> du Projet Chaleur&nbsp;!</h2>
+              </div>
+              <div>
+                <p>Vous avez chaud, très chaud, et l’impression de ne rien pouvoir faire… ça vous rend dingue&nbsp;? Que faire quand on n’a pas la main sur notre bâtiment&nbsp;? Comment agir à votre échelle, avec les moyens que vous avez ici et maintenant&nbsp;?</p>
+              </div>
+              <div>
+                <a class="bouton" href="/strategies/tutos.html">Voir les vidéos tuto</a>
+              </div>
+            </div>
           </section>
 
-          <section class="exposition">
-            <div class="presentation">
-              <img src="images/exposition.jpeg" alt="" />
-              <div class="content">
+          <section class="bloc-secondaire">
+            <div class="froid">
+              <div class="contenu">
                 <div>
-                  <h2>&nbsp;EXPOSITION&nbsp;<br>&nbsp;Avoir chaud mais pas trop&nbsp;<br>&nbsp;chez soi et en toute saison&nbsp;</h2>
+                  <h2><em>Se rafraîchir</em><br> quand il fait chaud</h2>
                 </div>
                 <div>
-                  <p><strong>&nbsp;Du 13 au 26 février 2026 à Cluny&nbsp;<br></strong></p>
-                  <p>&nbsp;Salle Victor Duruy - 4 place du marché&nbsp;<br></p>
+                  <p>☼ ☼ ☼</p>
                 </div>
                 <div>
-                  <p>Venez voir et tester des aménagements <em>organo-climatiques</em> pour se réchauffer en hiver et se rafraîchir en été de façon élégante et économique, lors d'une exposition sensible et inspirante.</p>
+                  <p>Comment adapter nos habitudes pour bien vivre la saison chaude&nbsp;?</p>
+                </div>
+                <div>
+                  <a class="bouton" href="/strategies/se-rafraichir.html">Voir les stratégies</a>
                 </div>
               </div>
             </div>
-            <div class="container">
-              <div class="ateliers">
-                <div class="image"></div>
-                <div class="content">
-                  <div>
-                    <h2>&nbsp;ATELIERS&nbsp;<br></h2>
-                    <p class="subtitle"><strong>&nbsp;Du 14 au 26 février&nbsp;<br></strong></p>
-                    <p class="subtitle"><strong>&nbsp;Cluny&nbsp;</strong></p>
-                  </div>
-                  <div>
-                    <p>Comment avoir chaud chez soi, mais pas trop, sans trop consommer&nbsp;?</p>
-                  </div>
-                  <div>
-                    <a class="light-button" href="/ateliers.html">Voir les ateliers</a>
-                  </div>
+            <div class="chaud">
+              <div class="contenu">
+                <div>
+                  <h2><em>Se réchauffer</em><br> quand il fait froid</h2>
                 </div>
-              </div>
-              <div class="colloque">
-                <div class="image"></div>
-                <div class="content">
-                  <div>
-                    <h2>&nbsp;COLLOQUE&nbsp;<br></h2>
-                    <p class="subtitle"><strong>&nbsp;Vendredi 20 février&nbsp;<br></strong></p>
-                    <p class="subtitle"><strong>&nbsp;14h à 17h - Cluny&nbsp;</strong></p>
-                  </div>
-                  <div>
-                    <p><em>Avoir chaud mais pas trop</em><br>Repenser le confort thermique à l'ère de l'anthropocène</p>
-                  </div>
-                  <div>
-                    <a class="light-button" href="/colloque.html">Voir le replay</a>
-                  </div>
+                <div>
+                  <p>❆ ❆ ❆</p>
+                </div>
+                <div>
+                  <p>Que faire pour avoir chaud, chez soi, sans trop consommer&nbsp;?</p>
+                </div>
+                <div>
+                  <a class="bouton" href="/strategies/se-rechauffer.html">Voir les stratégies</a>
                 </div>
               </div>
             </div>
           </section>
 
-          <section class="information">
-            <h2>Soyez informé·es !</h2>
-            <p>Recevez les actualités et évènements du projet chaleur par e-mail.</p>
-
-            <form
-              class="form"
-              name="contact"
-              method="post"
-              action="/merci/"
-              data-netlify="true"
-              netlify-honeypot="name">
-
-              <div class="form__element name">
-                <label for="name">Votre nom</label>
-                <input type="text" name="name">
-              </div>
-
-              <div class="form__element email">
-                <label for="email">Votre adresse e-mail</label>
-                <input type="email" name="email" required>
-              </div>
-
-              <div class="form__element">
-                <button class="button" type="submit">Recevoir les actualités</button>
-              </div>
-            </form>
-          </section>
-
-          <section class="equipe">
-            <h2>Notre équipe créatrice</h2>
+          <section class="actu">
+            <h2>Les actualités chaudes</h2>
             <ul>
               <li>
-                <img src="images/lucile.jpeg" alt="">
-                <h3>Lucile Sauzet</h3>
-                <p>Pilote du projet chaleur. Fondatrice de <a href="https://fluxinitiative.com/" target="_blank" title="Flux Initiative - Nouvelle fenêtre">Flux Initiative</a>. Experte usages, conception organo-climatiques, thermorégulation.</p>
+                <img src="images/articles/tutos/cover.jpeg" alt="">
+                <p class="categorie">Pour agir</p>
+                <h3><a href="/articles/tutos.html">Les Tutos du Projet Chaleur&nbsp;: l’art du rafraîchissement organo-climatique et low-tech avec vos objets du quotidien</a></h3>
+                <p>À travers une série inédite de cinq tutoriels vidéo en open-source, ce projet d'intérêt général insuffle un vent de bon sens et d'autonomie au cœur de l'été.</p>
               </li>
               <li>
-                <img src="images/melissa.jpeg" alt="">
-                <h3>Melissa Portilla</h3>
-                <p>Experte conception, design des politiques publiques, création d’exposition.</p>
-              </li>
-              <li>
-                <img src="images/gaelle.jpeg" alt="">
-                <h3>Gaëlle Pinson</h3>
-                <p>Experte aménagement du territoire, innovation et architecture.</p>
+                <img src="images/articles/roubaix/cover.jpeg" alt="">
+                <p class="categorie">Entretien</p>
+                <h3><a href="/articles/roubaix.html">L’art de vivre la canicule grâce au design organo-climatique&nbsp;!</a></h3>
+                <p>Loin des solutions techniques coûteuses ou énergivores, Lucile Sauzet, la fondatrice du Projet Chaleur, nous invite à découvrir la démarche organo-climatique qui redonne aux habitants le pouvoir d’agir.</p>
               </li>
             </ul>
           </section>
 
           <section class="histoire">
-            <!-- <h2>L’histoire du projet chaleur</h2> -->
-            <p class="histoire-text">
-              Alors que les vagues de chaleur se multiplient, que le chauffage des logements nécessitent une bonne part d’énergie, ressource précieuse, notre rapport à la chaleur doit être repensé. Le confort moderne hérité du XXe siècle ne répond plus aux exigences écologiques et sociales contemporaines. La rénovation énergétique, à l’échelle du bâti, ne comble qu’une partie des besoins. Le Projet Chaleur propose une alternative concrète : réconcilier sobriété énergétique et art de vivre à travers des aménagements organo-climatiques, low-techs, inspirés des techniques ancestrales, ancrés dans les gestes du quotidien.
-            </p>
+            <h2>La génèse du Projet Chaleur</h2>
+            <p>Alors que les vagues de chaleur se multiplient, que le chauffage des logements nécessitent une bonne part d’énergie, ressource précieuse, notre rapport à la chaleur doit être repensé. Le confort moderne hérité du XXe siècle ne répond plus aux exigences écologiques et sociales contemporaines. La rénovation énergétique, à l’échelle du bâti, ne comble qu’une partie des besoins.</p>
+            <p><strong>Le Projet Chaleur propose une alternative concrète : réconcilier sobriété énergétique et art de vivre à travers des aménagements organo-climatiques, low-techs, inspirés des techniques ancestrales, ancrés dans les gestes du quotidien.</strong></p>
           </section>
 
-          <section class="soutiens">
-            <h2>Ils soutiennent le projet chaleur</h2>
-            <ul>
-              <li>
-                <div class="image">
-                  <img src="images/ademe.svg" alt="">
-                </div>
-                <h3>L'ADEME</h3>
-              </li>
-              <li>
-                <div class="image">
-                  <img src="images/cluny.png" alt="">
-                </div>
-                <h3>La ville de Cluny</h3>
-              </li>
-              <li>
-                <div class="image">
-                  <img src="images/ccc.png" alt="">
-                </div>
-                <h3>La Communauté de communes de Clunisois</h3>
-              </li>
-              <li>
-                <div class="image">
-                  <img src="images/leroy-merlin-source.jpg" alt="">
-                </div>
-                <h3>Leroy Merlin Source</h3>
-              </li>
-            </ul>
+          <section class="equipe">
+            <h2>Un collectif engagé pour le design organo-climatique</h2>
+            <div>
+              <div>
+                <p>Mené par Lucile Sauzet, le Projet Chaleur est un collectif pionnier du design organo-climatique : une démarche globale qui harmonise les besoins physiologiques du corps humain avec les limites de notre environnement.</p>
+                <p>Notre mission est d'outiller et de diffuser un Art de vivre sobre, soutenable et désirable, face aux extrêmes des saisons chaudes et froides. Pour y parvenir, nous réinventons l'adaptation de nos lieux de vie intimes comme collectifs.</p>
+                <p>Nous concevons des aménagements sur mesure en plaçant le vécu et le ressenti thermique des usagers au centre de notre création, afin de redonner à chacun le pouvoir d’agir.</p>
+                <!-- <a class="bouton" href="/mission.html">Découvrir notre expertise</a> -->
+              </div>
+              <div>
+                <img src="images/personnes/equipe.jpeg" alt="Lucile Sauzet" width="320" height="320">
+              </div>
+            </div>
           </section>
 
           <section class="contact" id="contact">
@@ -198,7 +147,89 @@
               </div>
 
               <div class="form__element">
-                <button class="button" type="submit">Envoyer le message</button>
+                <button class="bouton" type="submit">Envoyer le message</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="soutiens">
+            <h2>Les partenaires du Projet Chaleur</h2>
+            <ul>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/ademe.svg" alt="">
+                </div>
+                <h3>L'ADEME</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/lyon.svg" alt="">
+                </div>
+                <h3>La ville de Lyon</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/roubaix.svg" alt="">
+                </div>
+                <h3>La ville de Roubaix</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/justice.svg" alt="">
+                </div>
+                <h3>Le ministère de la Justice</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/cluny.png" alt="">
+                </div>
+                <h3>La ville de Cluny</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/ccc.png" alt="">
+                </div>
+                <h3>En clunisois</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/leroy-merlin-source.jpg" alt="">
+                </div>
+                <h3>Leroy Merlin Source</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/saisons-zero.png" alt="">
+                </div>
+                <h3>Saisons Zéro</h3>
+              </li>
+            </ul>
+          </section>
+
+          <section class="information">
+            <h2>Soyez informé·es !</h2>
+            <p>Recevez les actualités du Projet Chaleur par e-mail.</p>
+
+            <form
+              class="form"
+              name="contact"
+              method="post"
+              action="/merci/"
+              data-netlify="true"
+              netlify-honeypot="name">
+
+              <div class="form__element name">
+                <label for="name">Votre nom</label>
+                <input type="text" name="name">
+              </div>
+
+              <div class="form__element email">
+                <label for="email">Votre adresse e-mail</label>
+                <input type="email" name="email" required>
+              </div>
+
+              <div class="form__element">
+                <button class="bouton" type="submit">Recevoir les actualités</button>
               </div>
             </form>
           </section>
@@ -207,7 +238,7 @@
 
         <footer>
             <small>Typographie : <em>Faune</em>, Alice Savoie / Cnap</small><br>
-            <small>Textes, illustrations et modèles déposés : Lucile Sauzet © 2025 sous licence <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr" target="_blank" title="CC BY-NC-ND - Nouvelle fenêtre">CC BY-NC-ND</a></small><br>
+            <small>Textes, illustrations et modèles déposés : Lucile Sauzet © 2026 sous licence <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr" target="_blank" title="CC BY-NC-ND - Nouvelle fenêtre">CC BY-NC-ND</a></small><br>
         </footer>
     </body>
 </html>

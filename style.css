@@ -149,7 +149,7 @@ body {
 
   header {
     max-width: var(--max-width);
-    margin: 4rem auto 2rem auto;
+    margin: 3rem auto 2rem auto;
     padding: 0 1rem;
     color: var(--rouge-bordeau);
 
@@ -311,7 +311,6 @@ body {
       }
     }
 
-
     .information, .contact {
       margin-top: 2rem;
       padding: 2rem;
@@ -416,6 +415,10 @@ body {
             display: inline-block;
           }
         }
+      }
+
+      img {
+        max-width: 100%
       }
     }
 

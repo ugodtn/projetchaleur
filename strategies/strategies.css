@@ -49,6 +49,7 @@ main {
     gap: 2rem;
     padding: 2rem;
     margin-bottom: 2rem;
+    position: relative;
 
     img {
       flex: 1 1 200px;
@@ -70,6 +71,19 @@ main {
 
       p {
         font-size: 1.25rem;
+      }
+
+      .bouton {
+        display: inline-block;
+        margin-top: 1rem;
+      }
+
+      a::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        cursor: pointer;
       }
 
       :last-child {

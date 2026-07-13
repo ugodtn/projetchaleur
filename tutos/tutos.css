@@ -1,0 +1,102 @@
+.logo img {
+  width: 160px !important;
+  height: 64px !important;
+}
+
+main {
+  max-width: 880px !important;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.bloc-titre {
+
+  a {
+    display: inline-block;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .date {
+    margin-top: 1rem;
+    font-size: 1.24rem;
+  }
+
+  .cover {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .sous-titre {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.bloc-contenu {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  img {
+    flex: 1 1 200px;
+    object-fit: contain;
+    max-width: 192px;
+    align-self: flex-start;
+  }
+
+  .textes {
+    flex: 1 1 400px;
+
+    h2 {
+      display: inline;
+    }
+
+    .subtitle {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.bloc-details {
+  font-size: 1.25rem;
+}
+
+.bloc-primaire {
+  text-align: center;
+}
+
+.categorie {
+  margin: 0;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--rouge-bordeau);
+  background-color: var(--peau-de-blanc);
+  padding: 0.25rem 0.75rem 0.375rem 0.75rem;
+  border-radius: 8px;
+}

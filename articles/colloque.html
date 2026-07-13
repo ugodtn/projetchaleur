@@ -2,12 +2,12 @@
 <html lang="fr-fr">
     <head>
         <meta charset="UTF-8" />
-        <title>Colloque : Avoir chaud mais pas trop - Repenser le confort thermique à l'ère de l'anthropocène - Projet chaleur</title>
+        <title>Colloque : Repenser le confort thermique à l'ère de l'anthropocène - Projet chaleur</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="description" content="Replay disponible ! Écoutez des acteurs parler confort thermique, sobre et
           soutenable, dans un contexte de changement climatique et
           de raréfaction des ressources." />
-        <meta property="og:title" content="Colloque : Avoir chaud mais pas trop - Repenser le confort thermique à l'ère de l'anthropocène - Projet chaleur" />
+        <meta property="og:title" content="Colloque : Repenser le confort thermique à l'ère de l'anthropocène - Projet chaleur" />
         <meta property="og:url" content="https://projetchaleur.com/colloque" />
         <meta property="og:image" content="https://projetchaleur.com/images/articles/colloque/Video.jpg" />
         <meta property="og:description" content="Replay disponible ! Écoutez des acteurs parler confort thermique, sobre et
@@ -15,10 +15,8 @@
           de raréfaction des ressources." />
         <meta property="og:site_name" content="Projet chaleur" />
         <meta property="og:type" content="website" />
-        <link rel='stylesheet' href='https://www.cnap.fr/sites/faune/styles/faune-fontes.css'>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" type="text/css" href="articles.css" />
-        <link rel="stylesheet" type="text/css" href="colloque.css" />
+        <link rel="stylesheet" type="text/css" href="/style.css" />
+        <link rel="stylesheet" type="text/css" href="/articles/colloque.css" />
         <link rel="icon" href="https://projetchaleur.com/images/favicon.jpg">
     </head>
     <body>
@@ -30,30 +28,28 @@
 
         <main>
 
-          <section class="exposition">
-            <div class="presentation">
-              <img src="/images/colloqueCover.jpeg" alt="" />
-              <div class="content">
+          <section class="bloc-primaire">
+            <img src="/images/colloqueCover.jpeg" alt="" />
+            <div class="content">
+              <div>
                 <div>
-                  <div>
-                    <p><strong>&nbsp;Enregistrement disponible !&nbsp;<br></strong></p>
-                  </div>
-                  <div>
-                    <p><strong>&nbsp;Vendredi 20 février, Cluny&nbsp;<br></strong></p>
-                  </div>
+                  <p><strong>&nbsp;Enregistrement disponible !&nbsp;<br></strong></p>
                 </div>
                 <div>
-                  <p class="description">Écoutez des acteurs parler confort thermique, sobre et
-                    soutenable, dans un contexte de changement climatique et
-                    de raréfaction des ressources. Nous explorerons les enjeux
-                    et approfondirons les défis afin de pousser la réflexion sur les
-                    moyens de renforcer l'écosystème global où d'autres manières
-                    d'envisager le confort d'habiter peuvent se développer.</p>
-                    <a class="light-button" href="#enregistrement">Voir l'enregistrement</a>
-                    <a class="light-button" href="/#contact" >Nous contacter</a>
-                    <!-- <a class="light-button" href="https://colloqueprojetchaleur.eventbrite.com/" target="_blank" title="Participer sur place - Nouvelle fenêtre">Participer sur place</a>
-                    <a class="light-button" href="https://colloqueprojetchaleurenligne.eventbrite.fr/" target="_blank" title="Participer en visio - Nouvelle fenêtre">Participer en visio</a> -->
+                  <p><strong>&nbsp;Vendredi 20 février, Cluny&nbsp;<br></strong></p>
                 </div>
+              </div>
+              <div>
+                <p class="description">Écoutez des acteurs parler confort thermique, sobre et
+                  soutenable, dans un contexte de changement climatique et
+                  de raréfaction des ressources. Nous explorerons les enjeux
+                  et approfondirons les défis afin de pousser la réflexion sur les
+                  moyens de renforcer l'écosystème global où d'autres manières
+                  d'envisager le confort d'habiter peuvent se développer.</p>
+                  <a class="bouton" href="#enregistrement">Voir l'enregistrement</a>
+                  <a class="bouton" href="/#contact" >Nous contacter</a>
+                  <!-- <a class="light-button" href="https://colloqueprojetchaleur.eventbrite.com/" target="_blank" title="Participer sur place - Nouvelle fenêtre">Participer sur place</a>
+                  <a class="light-button" href="https://colloqueprojetchaleurenligne.eventbrite.fr/" target="_blank" title="Participer en visio - Nouvelle fenêtre">Participer en visio</a> -->
               </div>
             </div>
           </section>
@@ -430,6 +426,34 @@
                 </div>
               </div>
               <p></p>
+            </section>
+
+            <section class="information">
+              <h2>Soyez informé·es !</h2>
+              <p>Recevez les actualités du Projet Chaleur par e-mail.</p>
+
+              <form
+                class="form"
+                name="contact"
+                method="post"
+                action="/merci/"
+                data-netlify="true"
+                netlify-honeypot="name">
+
+                <div class="form__element name">
+                  <label for="name">Votre nom</label>
+                  <input type="text" name="name">
+                </div>
+
+                <div class="form__element email">
+                  <label for="email">Votre adresse e-mail</label>
+                  <input type="email" name="email" required>
+                </div>
+
+                <div class="form__element">
+                  <button class="bouton" type="submit">Recevoir les actualités</button>
+                </div>
+              </form>
             </section>
 
           </section>

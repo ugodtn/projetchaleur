@@ -73,72 +73,20 @@
               </div>
             </div>
 
-            <section class="annonce">
-              <p>❄︎&nbsp;Nos autres tutos seront publiés au fil de la semaine <a href="#information">➪&nbsp;Soyez&nbsp;informé·es&nbsp;!</a>&nbsp;❄︎</p>
-            </section>
-
             <div class="contenu froid">
-              <img src="/images/tutos/paf.jpeg" alt="" />
+              <img src="/images/tutos/paf-illu.jpeg" alt="" />
               <div class="textes">
                 <h2><em>Le PAF (Plan d’Action Fraîcheur)</em></h2>
                 <p class="subtitle"><strong>La stratégie d'un foyer proactif</strong></p>
                 <p>Parce qu'un bel objet ne suffit pas sans une bonne stratégie. Ce guide méthodologique téléchargeable aide à connaître les possibilités de son logement et à planifier ses rituels thermiques au fil des heures (gestion des ombres, courants d'air), seul, en famille ou en colocation.</p>
-                <p>Disponible le 17 juillet.&nbsp;<a href="#information">Soyez&nbsp;informé·es&nbsp;!</a></p>
+                <a href="/tutos/paf.html" class="bouton">Voir le tutoriel vidéo</a>
               </div>
             </div>
 
-          </section>
+            <!-- <section class="annonce">
+              <p>❄︎&nbsp;Nos autres tutos seront publiés au fil de la semaine <a href="#information">➪&nbsp;Soyez&nbsp;informé·es&nbsp;!</a>&nbsp;❄︎</p>
+            </section> -->
 
-          <section class="information" id="information">
-            <h2>Soyez informé·es dès la sortie des tutos&nbsp;!</h2>
-            <!-- <p>Recevez un e-mail quand nos tutos seront publiés (dans la semaine).</p> -->
-
-            <form
-              class="form"
-              name="tutos"
-              method="post"
-              action="/merci/"
-              data-netlify="true"
-              netlify-honeypot="name">
-
-              <div class="form__element name">
-                <label for="name">Votre nom</label>
-                <input type="text" name="name">
-              </div>
-
-              <div class="form__element email">
-                <label for="email">Votre adresse e-mail</label>
-                <input type="email" name="email" required>
-              </div>
-
-              <div class="form__element">
-                <button class="bouton" type="submit">Recevoir les tutos</button>
-              </div>
-            </form>
-          </section>
-
-          <section class="soutiens">
-            <h2>C'est grâce à eux que les tutos existent</h2>
-            <ul>
-              <li>
-                <div class="image">
-                  <img src="/images/partenaires/vll.jpeg" alt="">
-                </div>
-                <h3>Vivons Lowtech Leven</h3>
-              </li>
-              <li>
-                <div class="image">
-                  <img src="/images/partenaires/wallonie.jpeg" alt="">
-                </div>
-                <h3>La Wallonie</h3>
-              </li>
-              <li>
-                <div class="image">
-                  <img src="/images/partenaires/roubaix.svg" alt="">
-                </div>
-                <h3>La ville de Roubaix</h3>
-              </li>
-            </ul>
           </section>
 
           <section class="bloc-secondaire">
@@ -174,6 +122,58 @@
                 </div>
               </div>
             </div>
+          </section>
+
+          <section class="soutiens">
+            <h2>C'est grâce à eux que les tutos existent</h2>
+            <ul>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/vll.jpeg" alt="">
+                </div>
+                <h3>Vivons Lowtech Leven</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/wallonie.jpeg" alt="">
+                </div>
+                <h3>La Wallonie</h3>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="/images/partenaires/roubaix.svg" alt="">
+                </div>
+                <h3>La ville de Roubaix</h3>
+              </li>
+            </ul>
+          </section>
+
+          <section class="information">
+            <h2>Soyez informé·es !</h2>
+            <p>Recevez les actualités du Projet Chaleur par e-mail.</p>
+
+            <form
+              class="form"
+              name="contact"
+              method="post"
+              action="/merci/"
+              data-netlify="true"
+              netlify-honeypot="name">
+
+              <div class="form__element name">
+                <label for="name">Votre nom</label>
+                <input type="text" name="name">
+              </div>
+
+              <div class="form__element email">
+                <label for="email">Votre adresse e-mail</label>
+                <input type="email" name="email" required>
+              </div>
+
+              <div class="form__element">
+                <button class="bouton" type="submit">Recevoir les actualités</button>
+              </div>
+            </form>
           </section>
 
         </main>

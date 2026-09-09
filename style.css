@@ -1,5 +1,5 @@
 :root {
-  --max-width : 1024px;
+  --max-width : 1120px;
   --text-max-width : 768px;
 
   --bleu-marine : #161846;
@@ -234,6 +234,36 @@ body {
     p {
       margin: 0.5rem 0 4rem 0;
       font-size: 1.5rem;
+    }
+  }
+
+  nav {
+    max-width: var(--max-width);
+    margin: 0 auto 0 auto;
+    background-color: var(--peau-de-blanc);
+    font-weight: bold;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+      justify-items: center;
+      gap: 2rem;
+      padding: 1rem 4rem;
+      margin: 0;
+      list-style-type: none;
+
+      li {
+        margin-bottom: 0;
+
+        a {
+          text-decoration: none;
+
+          &.actuel {
+            border-bottom: 2px solid var(--bleu-marine);
+          }
+          }
+        }
+      }
     }
   }
 

@@ -4,7 +4,6 @@
 }
 
 main {
-  max-width: 720px !important;
   margin: 0 auto;
 }
 
@@ -23,6 +22,8 @@ h3 {
 }
 
 .bloc-titre {
+  max-width: var(--text-max-width);
+  margin: 0 auto;
 
   a {
     font-size: 1.25rem;
@@ -32,14 +33,16 @@ h3 {
     margin-top: 1rem;
     font-size: 1.24rem;
   }
+}
 
-  .cover {
-    width: 100%;
-    margin-top: 1rem;
-  }
+.cover {
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .article {
+  max-width: var(--text-max-width);
+  margin: 0 auto;
   font-size: 1.25rem;
 
   img {

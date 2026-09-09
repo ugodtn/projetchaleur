@@ -227,9 +227,14 @@ body {
 
   header {
     max-width: var(--max-width);
-    margin: 3rem auto 2rem auto;
+    margin: 1.75rem auto 1.375rem auto;
     padding: 0 1rem;
     color: var(--rouge-bordeau);
+
+    img {
+      width: 240px;
+      max-width: 50%;
+    }
 
     p {
       margin: 0.5rem 0 4rem 0;

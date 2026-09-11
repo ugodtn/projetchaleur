@@ -97,6 +97,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 0 5%;
 
   .element {
     flex: 1 1 25%;
@@ -120,6 +121,7 @@ main {
 .bloc-offre {
 
     .contenu {
+      margin: 0 5% 3rem 5%;
 
       .entete {
 
@@ -166,4 +168,8 @@ main {
         }
       }
     }
+}
+
+.bloc-collectif {
+  margin: 0 5% 3rem 5%;
 }

@@ -436,6 +436,13 @@ body {
         margin: 0;
       }
 
+      .sous-titre {
+        font-size: 1.25rem;
+        font-weight: bold;
+        max-width: var(--text-max-width);
+        margin: 1rem auto 0 auto;
+      }
+
       .form {
         margin-top: 2rem;
 

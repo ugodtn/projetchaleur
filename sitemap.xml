@@ -1,59 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/download/49e437b27-adb79e4a5/sitemap.xsl"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
        <loc>https://projetchaleur.com/</loc>
-       <lastmod>2026-07-15T13:33:33+00:00</lastmod>
-       <changefreq>daily</changefreq>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
        <priority>1.0000</priority>
   </url>
   <url>
        <loc>https://projetchaleur.com/tutos</loc>
-       <lastmod>2026-07-15T13:33:33+00:00</lastmod>
-       <changefreq>daily</changefreq>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://projetchaleur.com/colloque</loc>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://projetchaleur.com/exposition</loc>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://projetchaleur.com/studio</loc>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://projetchaleur.com/strategies/se-rafraichir</loc>
-       <lastmod>2026-07-15T13:33:33+00:00</lastmod>
-       <changefreq>daily</changefreq>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://projetchaleur.com/strategies/se-rechauffer</loc>
-       <lastmod>2026-07-15T13:33:33+00:00</lastmod>
-       <changefreq>daily</changefreq>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://projetchaleur.com/articles/prix</loc>
+       <lastmod>2026-09-23T05:00:00+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://projetchaleur.com/articles/tutos</loc>
        <lastmod>2026-07-13T05:00:00+00:00</lastmod>
-       <changefreq>daily</changefreq>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://projetchaleur.com/articles/roubaix</loc>
        <lastmod>2026-07-02T05:00:00+00:00</lastmod>
-       <changefreq>daily</changefreq>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://projetchaleur.com/tutos/bob-a-l-eau</loc>
-       <lastmod>2026-07-15T13:33:33+00:00</lastmod>
-       <changefreq>daily</changefreq>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://projetchaleur.com/tutos/col-cool</loc>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://projetchaleur.com/tutos/surmatelas-fraicheur</loc>
-       <lastmod>2026-07-15T13:33:33+00:00</lastmod>
-       <changefreq>daily</changefreq>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://projetchaleur.com/tutos/assise-oasis</loc>
-       <lastmod>2026-07-15T13:33:33+00:00</lastmod>
-       <changefreq>daily</changefreq>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://projetchaleur.com/tutos/paf</loc>
+       <lastmod>2026-09-24T06:11:02+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
 </urlset>

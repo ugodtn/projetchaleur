@@ -11,6 +11,274 @@
   padding: 2rem;
   font-size: 1.25rem;
 
+  .grid-container {
+    max-width: 100%;
+    margin: 0 auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+    gap: 2rem;
+
+    .grid-item {
+      padding: 1.5rem;
+      background-color: var(--peau-de-blanc);
+
+      h3 {
+        margin: 0.5rem 0 0 0;
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .timeline {
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+      gap: 2rem;
+
+      .step {
+        position: relative;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .step-num {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        font-size: 3.5rem;
+        font-style: italic;
+        color: var(--bleu-gris);
+        z-index: 2;
+        user-select: none;
+      }
+
+      .step-card {
+        background-color: var(--jaune-orange);
+        padding: 1.5rem;
+        flex-grow: 1; /* Harmonise la hauteur des blocs sur une même ligne */
+      }
+
+      h3 {
+        margin: 0;
+      }
+
+      .step-subtitle {
+        margin: 1rem 0;
+        font-style: italic;
+      }
+
+      .step-body {
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+
+    .tips-grid {
+      margin: 4rem 0 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+      gap: 1rem 4rem;
+
+      p {
+        margin: 0 0 0.5rem 0;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .tip-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      /* Grands numéros en italique */
+      .tip-num {
+        margin-top: -1.75rem;
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+        color: var(--jaune-orange);
+        flex-shrink: 0;
+        min-width: 3rem;
+        user-select: none;
+      }
+
+      /* Surlignage inline qui épouse exactement la longueur de chaque ligne */
+      .tip-highlight {
+        font-weight: bold;
+        background-color: var(--jaune-orange);
+        padding: 0.35rem;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+      }
+
+      /* Variante bleue pour les points 6 et 7 */
+      .tip-item--blue .tip-num {
+        color: var(--bleu-gris);
+      }
+
+      .tip-item--blue .tip-highlight {
+        background-color: var(--bleu-gris);
+        color: white;
+      }
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 1.5rem;
+
+      /* Style commun des cartes */
+      .project-card {
+        background-color: #F4F3EF;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Carte principale (s'étend sur 2 lignes sur grand écran) */
+      .project-card--featured {
+        grid-row: span 2;
+        padding: 1.5rem;
+      }
+
+      /* Conteneur visuel en haut de chaque carte */
+      .card-media {
+        width: 100%;
+        margin-bottom: 1rem;
+        overflow: hidden;
+      }
+
+      .project-card--featured .card-media img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .card-media--placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Typographie des textes */
+      .card-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-card--featured .card-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Titres en police serif */
+      .serif-bold {
+        font-weight: bold;
+      }
+
+      .card-date {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: auto; /* Aligne proprement la date en bas de carte */
+        padding-top: 0.25rem;
+      }
+    }
+
+    /* Adaptation tablette : la carte principale passe en pleine largeur en haut */
+    @media (max-width: 960px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .project-card--featured {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+    }
+
+    /* Adaptation mobile : 1 seule colonne */
+    @media (max-width: 600px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card--featured {
+        grid-column: span 1;
+      }
+    }
+
+    .skills-section {
+      display: grid;
+      grid-template-columns: 1.85fr 1fr;
+      gap: 2rem;
+      align-items: center;
+
+      /* Conteneur du SVG */
+      .diagram-wrapper {
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto;
+      }
+
+      .diagram-wrapper svg {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Encadré de droite */
+      .contacts-box {
+        background-color: #F4F3EF;
+        padding: 2rem;
+      }
+
+      .contacts-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 0 0 2rem 0;
+      }
+
+      .contact-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .contact-name {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .contact-role {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+
+    /* Passage en 1 colonne sur tablette / mobile */
+    @media (max-width: 860px) {
+      .skills-section {
+        grid-template-columns: 1fr;
+      }
+    }
+
   .enregistrement {
     display: flex;
     flex-wrap: wrap;

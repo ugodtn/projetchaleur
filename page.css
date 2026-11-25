@@ -9,7 +9,7 @@
 
 .presentation {
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 4rem auto;
   font-size: 1.25rem;
 
   .grid-container {

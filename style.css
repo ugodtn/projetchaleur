@@ -379,6 +379,7 @@ body {
 
         h1, h2 {
           font-size: 2rem;
+          font-weight: bold;
           display: inline;
           color: white;
         }

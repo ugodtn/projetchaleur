@@ -8,7 +8,8 @@
 }
 
 .presentation {
-  padding: 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
   font-size: 1.25rem;
 
   .grid-container {
